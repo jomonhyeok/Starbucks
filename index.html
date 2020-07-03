@@ -9,13 +9,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <!--Semantic UI-->
     <link rel="stylesheet" href="css/import.css"><!--공통css-->
-    <link rel="stylesheet" href="css/page.css"> 
     <link rel="stylesheet" href="css/bxslider.css"> <!--bxslider css-->
     <script src="js/starbucks.js"></script>
-
 </head>
 <body>
-    <i class="large black map marker alternate icon" style="padding: 20px;"></i>
     <div>
         <i class="angle double up icon" style="font-size: 2em"></i>
         <span>TOP</span>
@@ -26,9 +23,15 @@
         </div> -->
         <nav>
             <h1><img src="img/mainlogo.png" alt="mainlogo"></h1>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <ul>
                 <li>
-                    <h2><a href="#COMPANY">COMPANY</a></h2>
+                    <h2><a href="#COMPANY">COMPANY</a><i class="angle down icon"></i></h2>
                     <ol>
                         <li>
                             <h3><a href="#">소개</a></h3>
@@ -42,7 +45,7 @@
                     </ol>
                 </li>
                 <li>
-                    <h2><a href="#MENU">MENU</a></h2>
+                    <h2><a href="#MENU">MENU</a><i class="angle down icon"></i></h2>
                     <ol>
                         <li>
                             <h3><a href="#">DRINKS</a></h3>
@@ -59,7 +62,7 @@
                     </ol>
                 </li>
                 <li>
-                    <h2><a href="#RESERVE">RESERVE</a></h2>
+                    <h2><a href="#RESERVE">RESERVE</a><i class="angle down icon"></i></h2>
                     <ol>
                         <li>
                             <h3><a href="#">STORY</a></h3>
@@ -70,7 +73,7 @@
                     </ol>
                 </li>
                 <li>
-                    <h2><a href="#NEWS">NEWS</a></h2>
+                    <h2><a href="#NEWS">NEWS</a><i class="angle down icon"></i></h2>
                     <ol>
                         <li>
                             <h3><a href="#">국내 뉴스룸</a></h3>
@@ -81,7 +84,7 @@
                     </ol>
                 </li>
                 <li>
-                    <h2><a href="#RECRUIT">RECRUIT</a></h2>
+                    <h2><a href="#RECRUIT">RECRUIT</a><i class="angle down icon"></i></h2>
                     <ol>
                         <li>
                             <h3><a href="#">채용 소개</a></h3>
@@ -95,7 +98,7 @@
         </nav>
         <div class="slider">
             <div class="header_bg">
-                <div style="padding: 150px 300px;">
+                <div style="padding: 100px 0px 0 300px;">
                     <h2>“커피 이상의 특별한 경험을 소개합니다.”</h2>
                     <p>스타벅스는 일상을 풍요롭게 하는 제3의 공간으로서 <br/>
                         국내의 지역사회 속에서 고객과 함께하며 새로운 커피문화를 정착시키고 있습니다.</p>
@@ -103,7 +106,7 @@
                 <img src="img/headbg01.png" alt="headbackground">
             </div>
             <div class="header_bg">
-                <div style="padding: 150px 400px;">
+                <div style="padding: 100px 0px 100px 300px;">
                     <h2>
                         "스타벅스커피 코리아는 이대앞 1호점을 시작으로 모든 매장을 직영하며,<br>
                         하루 평균 30만명 이상의 고객들에게 특별한 스타벅스 경험을 전달하며<br>
@@ -113,7 +116,7 @@
                 <img src="img/headbg02.png" alt="headbackground">
             </div>
             <div class="header_bg">
-                <div style="padding: 100px 0 0 900px;">
+                <div style="padding: 100px 0 0 500px;">
                     <h2>
                         "스타벅스는 국내에 새로운 커피 문화를 소개하며, <br>
                         지역사회를 배려하는 사회적 책임과 성장을 함께 추구하고 있습니다."
@@ -122,7 +125,7 @@
                 <img src="img/headbg03.png" alt="headbackground">
             </div>
             <div class="header_bg">
-                <div style="padding: 150px 300px;">
+                <div style="padding: 100px 0px 0 300px;">
                     <h2>“지역사회와 커피 지식을 나누고 있습니다.”</h2>
                     <p>
                         스타벅스는 모든 직원을 파트너로 존중하고 있으며,<br>
@@ -168,7 +171,6 @@
             </li>
         </ul>
     </section>
-
     <section id="MENU" class="menu">
         <h3>MENU</h3>
         <hr>
@@ -187,7 +189,7 @@
             </li>
         </ul>
         <ol>
-            <li class="tableActive"> <!--li 4개-->
+            <li class="tableActive">
                 <ul>
                     <li>
                         <a href="#"><img src="img/drinks01.jpg" alt="drinks"></a>
@@ -215,7 +217,7 @@
                     </li>
                 </ul>
             </li>
-            <li> <!--li 4개-->
+            <li>
                 <ul>
                     <li>
                         <a href="#"><img src="img/food01.jpg" alt="food"></a>
@@ -243,7 +245,7 @@
                     </li>
                 </ul>
             </li>
-            <li> <!--li 4개-->
+            <li>
                 <ul>
                     <li>
                         <a href="#"><img src="img/product01.jpg" alt="product"></a>
@@ -271,7 +273,7 @@
                     </li>
                 </ul>
             </li>
-            <li> <!--li 4개-->
+            <li>
                 <ul>
                     <li>
                         <a href="#"><img src="img/card01.png" alt="card"></a>
@@ -301,7 +303,6 @@
             </li>
         </ol>
     </section>
-<!-- <p> 딸기 요거트 블렌디드 그랜마 애플 블랙 티  아이스 자몽 허니 블랙 티 아이스 돌체 블랙 밀크 티</p> -->
     <section id="RESERVE" class="reserve">
         <div>
             <div class="container">
@@ -352,7 +353,6 @@
                                     <p>매콤한 그린 허브에 알싸한 캐러멜이 강조되는 풍미</p>
                                 </li>
                             </ul>
-    
                         </div>
                     </div>
                     <div class="right">
@@ -391,13 +391,11 @@
                 </div>
             </div>
         </div>
-
     </section>
-
 
     <section id="NEWS" class="news">
         <div>
-            <h3>STARBUCKS<br/> NEWSROOM</h3>
+            <h3>STARBUCKS NEWSROOM</h3>
             <input type="button" value="more">
         </div>
         <ul>
@@ -440,7 +438,6 @@
         </ul>
     </section>
 
-
     <footer>
         <div class="footer_wrap">
             <div class="footer_top">
@@ -452,11 +449,11 @@
                     <li>
                         <h3>NAVIGATION</h3>
                         <ol>
-                            <li>About Us <span></span></li>
-                            <li>Useful Links <span></span></li>
-                            <li>Term of Use <span></span></li>
-                            <li>Contact Us <span></span></li>
-                            <li>Privacy <span></span></li>
+                            <li> <a href="">About Us</a> <span></span></li>
+                            <li> <a href="">Useful Links</a> <span></span></li>
+                            <li><a href="">Term of Use</a> <span></span></li>
+                            <li> <a href="">Contact Us</a><span></span></li>
+                            <li><a href="">Privacy</a><span></span></li>
                         </ol>
                     </li>
                     <li>

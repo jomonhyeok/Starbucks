@@ -1,10 +1,21 @@
 $(document).ready(function(){
-    $('section.menu ul li').click(function(){
+    $('header nav ul li h2 i').click(function(){
+        if($('header nav ul > li').eq($(this).parent().parent().index()).hasClass('active')){
+            $('header nav ul > li').removeClass();
+        }else{
+            $('header nav ul > li').removeClass();
+            $('header nav ul > li').eq($(this).parent().parent().index()).addClass('active');
+        }
+    });
+    $('header nav label').click(function(){
+        $('header ul > li').removeClass();
+    });//메뉴 클릭했을때 하위 메뉴 다 닫히기
+    $('section.menu > ul li').click(function(){
         $('section.menu ul li').removeClass('menuActive');
         $(this).addClass('menuActive');
 
         $('section.menu ol > li').removeClass('tableActive');
-        $('section.menu ol > li').eq($('section.menu ul li').index(this)).addClass('tableActive');
+        $('section.menu ol > li').eq($('section.menu > ul li').index(this)).addClass('tableActive');
     });
 
     $('header div.slider').bxSlider({
@@ -47,21 +58,6 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop:0}, '500', 'swing');
     });
     $(document).scroll(function(){    
-        // if($(document).scrollTop() > $('.foodCategory').offset().top-800){
-        //     $('section.foodCategory > ul:first-of-type li').removeClass('positionType');
-        //     $('section.foodCategory > ul:first-of-type li:nth-of-type(1)').addClass('scroll1');
-        //     $('section.foodCategory > ul:first-of-type li:nth-of-type(2)').addClass('scroll2');
-        //     $('section.foodCategory > ul:first-of-type li:nth-of-type(3)').addClass('scroll3');
-        //     $('section.foodCategory > ul:first-of-type li:nth-of-type(4)').addClass('scroll4');
-        // }
-        // else if($(document).scrollTop() < $('.foodCategory').offset().top-800){
-        //     $('section.foodCategory > ul:first-of-type li').addClass('positionType');
-        //     $('section.foodCategory > ul:first-of-type li:nth-of-type(1)').removeClass('scroll1');
-        //     $('section.foodCategory > ul:first-of-type li:nth-of-type(2)').removeClass('scroll2');
-        //     $('section.foodCategory > ul:first-of-type li:nth-of-type(3)').removeClass('scroll3');
-        //     $('section.foodCategory > ul:first-of-type li:nth-of-type(4)').removeClass('scroll4');
-        // }
-
         var maxScollValue =$(document).height() - $(window).height();
         var scrollPer = $(document).scrollTop() / maxScollValue;
         $('.progressBar div').css('width', (scrollPer * 100) + '%'); //맨위의 스크롤바
