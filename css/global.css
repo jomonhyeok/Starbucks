@@ -140,6 +140,7 @@ footer div div.footer_bottom p:nth-child(2){cursor: pointer;}
 /* footer fin */
 
 @media screen and (max-width:767px){
+    header div.slider{display: none;}
     body > div{display: none;}
     header nav, section.company, section.menu, section.reserve > div, section.news{max-width: 500px; width: 100%; margin: 0 auto; padding: 50px 20px;}
     header nav label{border: 2px solid black; width: 40px; height: 40px; position: relative; border-radius: 10px;}
@@ -197,6 +198,7 @@ footer div div.footer_bottom p:nth-child(2){cursor: pointer;}
     /* footer fin */
 }
 @media screen and (min-width:768px) and (max-width:1024px){
+    header div.slider{display: none;}
     section.company, section.menu, section.reserve > div, section.news{max-width: 768px; width: 100%; margin: 0 auto;}
     header nav{width: 100%; margin: 0 auto; padding: 20px 40px;}
     header nav label{border: 2px solid black; width: 40px; height: 40px; position: relative; border-radius: 10px; cursor: pointer;}
